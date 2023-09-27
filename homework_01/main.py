@@ -2,6 +2,8 @@
 Домашнее задание №1
 Функции и структуры данных
 """
+
+
 def power_numbers(numbers):
     sq = []
 
@@ -10,10 +12,6 @@ def power_numbers(numbers):
         sq.append(power)
 
     return sq
-
-print(power_numbers(numbers = [1,2,3,5]))
-
-
 
 # filter types
 ODD = "odd"
@@ -43,7 +41,3 @@ def filter_numbers(numbers, filter_type):
     elif filter_type == PRIME:
         filtered_numbers = [num for num in numbers if prime(num)]
     return filtered_numbers
-
-print(filter_numbers([1, 2, 3], ODD))
-print(filter_numbers([2, 3, 4, 5], EVEN))
-print(filter_numbers([2, 3, 4], PRIME))
